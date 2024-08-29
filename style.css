@@ -1,0 +1,77 @@
+p{
+    color:white;
+}
+h1{
+    color:silver;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    background-color:red;
+}
+h2{
+    color:white;
+}
+h3{
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:white;
+    font:arial;
+}
+.text{
+    background-color:black;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.div{
+    background-color:red;
+    height:3px;
+}
+.mid{
+    background-color:red;
+    height:3px;
+}
+footer{
+    color:white;
+}
+body{
+    background-color:black;
+}
+.baseball{
+    background-color:red;
+    color:white;
+    background: transparent url("https://media.bizj.us/view/img/11984120/gabp2021-21*900x506x1440-810-0-75.jpg") no-repeat 250px -200px scroll;
+}
+ol{
+    color:navy;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+
+}
+img{
+    height:500px;
+    width:700px;
+    text-right:center;
+    text-left:center;
+}
+.elly{
+    margin-left:auto;
+    height:150px;
+    width:200px;
+    padding-bottom:175px;
+}
+.history{
+    margin-left:auto;
+    height:150px;
+    width:200px;
+    padding-bottom:175px;
+}
+.band{
+    color:red;
+}
