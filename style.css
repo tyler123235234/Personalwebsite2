@@ -49,6 +49,7 @@ body{
     max-width: 600px;
     margin-left:auto;
     margin-right:auto;
+    background-size: contain;
 }
 ol{
     color:navy;
