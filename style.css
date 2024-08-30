@@ -43,12 +43,13 @@ body{
     background-color:black;
 }
 .baseball{
-    background-color:red;
     color:white;
     max-width: 600px;
     margin-left:auto;
     margin-right:auto;
     background-size: contain;
+    background: transparent url("https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab23main-1536x959.jpg") no-repeat -600px -500px scroll;
+
 }
 ol{
     color:navy;
