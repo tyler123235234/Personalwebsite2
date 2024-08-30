@@ -57,8 +57,8 @@ ol{
 img{
     height:500px;
     width:700px;
-    text-right:center;
-    text-left:center;
+    right:center;
+    left:center;
 }
 .elly{
     margin-left:auto;
