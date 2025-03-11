@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-4">Submit a Review</h2>
+        <form id="reviewForm" class="space-y-4">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded">
+            <select id="rating" class="w-full p-2 border rounded">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★☆</option>
+                <option value="3">★★★☆☆</option>
+                <option value="2">★★☆☆☆</option>
+                <option value="1">★☆☆☆☆</option>
+            </select>
+            <textarea id="comment" placeholder="Your Review" class="w-full p-2 border rounded"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Submit</button>
+        </form>
+    </div>
+    <div class="max-w-2xl mx-auto mt-6">
+        <h2 class="text-2xl font-bold mb-4">Reviews</h2>
+        <div id="reviewsList" class="space-y-4"></div>
+    </div>
+    <script>
+        document.getElementById("reviewForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const rating = document.getElementById("rating").value;
+            const comment = document.getElementById("comment").value;
+            
+            if (!name || !comment) return;
+            
+            const reviewItem = `<div class='bg-white p-4 rounded shadow'><p><strong>${name}</strong> - ${"★".repeat(rating)}${"☆".repeat(5 - rating)}</p><p>${comment}</p></div>`;
+            document.getElementById("reviewsList").innerHTML += reviewItem;
+            
+            document.getElementById("reviewForm").reset();
+        });
+    </script>
+</body>
+</html>
